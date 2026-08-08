@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: echo "Testing bckend"
+      - run: echo "Testing backend"
   frontend:
     runs-on: ubuntu-latest
     steps:
