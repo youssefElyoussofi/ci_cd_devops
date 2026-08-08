@@ -1,0 +1,10 @@
+name: Hello ZeroOps
+on: push
+jobs:
+  workflow:
+    runs-on: ubuntu-latest
+    steps:
+      -uses: actions/checkout@v4
+      -run: echo "Repository: ${{github.repository}}"
+      -run: echo "Branch: ${{github.ref_name}}"
+      -run: echo "Commit SHA: ${{github.sha}}" 
