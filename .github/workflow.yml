@@ -1,0 +1,7 @@
+name: hello world
+on: push
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+    - run: cc test.c
+    - run: ./a.out
