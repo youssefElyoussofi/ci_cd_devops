@@ -4,6 +4,10 @@ jobs:
   c:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - run: cc test.c
+      - name: checkout the code
+        - uses : actions/checkout@v4
+
+      - name: compile code 
+        - run: cc test.c
+
       - run: ./a.out
